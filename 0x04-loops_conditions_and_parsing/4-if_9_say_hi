@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Script to displays Holberton Shcool 10 times and hi in the 9 iteration using while loop
+
+c=0
+while [ $c -le 10 ]
+do
+	if [ $c -eq 9 ]
+	then
+		echo "hi"
+	else
+		echo "Holberton School"
+	fi
+	((c++))
+
+done
