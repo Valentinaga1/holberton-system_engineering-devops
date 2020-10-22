@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Script using while loop to displays Holberton Shcool 10 times
+
+c=0
+while [ $c -le 9 ]
+do
+	echo "Holberton School"
+	((c++))
+done
