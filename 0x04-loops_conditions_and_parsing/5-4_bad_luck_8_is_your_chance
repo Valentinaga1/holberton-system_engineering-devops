@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script to displays different msgs depending to the iteration using while loop
 
 c=1
