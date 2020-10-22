@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-
 # Script to displays 12 hours with 59 minutes for each hour using while
+
 hour=0
 while [ $hour -le 12 ]
 do
