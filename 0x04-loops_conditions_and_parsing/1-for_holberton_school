@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Script using For loop to displays Holberton Shcool 10 times
+
+for (( c=1; c<=10; c++ ))
+do
+    echo "Holberton School"
+done
