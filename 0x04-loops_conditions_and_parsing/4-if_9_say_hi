@@ -6,10 +6,9 @@ while [ $c -le 10 ]
 do
 	if [ $c = 9 ]
 	then
-		echo "hi"
+		echo "Hi"
 	else
 		echo "Holberton School"
 	fi
 	((c++))
-
 done
