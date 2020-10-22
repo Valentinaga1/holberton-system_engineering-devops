@@ -14,7 +14,7 @@ do
 	then
 		echo "Fizz "
 	else
-		echo $number
+		echo "$number"
 	fi
 	((number++))
 done
