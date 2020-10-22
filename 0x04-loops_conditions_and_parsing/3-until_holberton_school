@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Script using until loop to displays Holberton Shcool 10 times
+
+c=1
+until [ $c -gt 10 ] 
+do
+	echo "Holberton School"
+	((c++))
+done
+
+#c=1
+#until ((c >= 10));
+#do
+#	echo "Holberton School"
+#	c=$((c + 1))
+#done
