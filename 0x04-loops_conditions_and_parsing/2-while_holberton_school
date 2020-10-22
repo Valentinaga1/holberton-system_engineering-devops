@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script using while loop to displays Holberton Shcool 10 times
 
 c=0
