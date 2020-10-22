@@ -9,8 +9,8 @@ do
 done
 
 #i=0
-#while ((i < 10));
+#while ((c < 10));
 #do
 #	echo "Holberton School"
-#	i=$((i + 1))
+#	c=$((c + 1))
 #done
