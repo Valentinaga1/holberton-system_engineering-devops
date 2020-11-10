@@ -1,13 +1,12 @@
 # 0x07. Networking basics #0
 
-## Description
-What you should learn from this project:
+## Learning Objectives
 
-* What it is
-* How many layers it has
-* How it is organized
-
----
+* OSI Model
+* What is a LAN
+* What is a WAN
+* What is the internet(what is IP adress, local host, subnet)
+* TCP/UDP
 
 ### [0. OSI model](./0-OSI_model)
 * OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
