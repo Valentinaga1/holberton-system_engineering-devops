@@ -8,7 +8,6 @@ What you should learn from this project:
 * What is /etc/hosts
 * How to display your machines active network interfaces
 
----
 
 ### [0. Localhost](./0-localhost)
 * What is localhost?
