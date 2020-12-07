@@ -10,7 +10,7 @@
 * Your Puppet manifests files must end with the extension .pp
 
 ### [0-create_a_file.pp](./0-create_a_file.pp)
-* Using Puppet, create a file in /tmp.  
+Using Puppet, create a file in /tmp.  
 Requirements:
 
 - File path is /tmp/holberton
@@ -20,13 +20,13 @@ Requirements:
 - File contains I love Puppet
 
 ### [1-install_a_package.pp](./1-install_a_package.pp)
-* Using Puppet, install puppet-lint.  
+Using Puppet, install puppet-lint.  
 Requirements:
 - Install puppet-lint
 - Version must be 2.1.1
 
 ### [2-execute_a_command.pp](./2-execute_a_command.pp)
-* Using Puppet, create a manifest that kills a process named killmenow.  
+Using Puppet, create a manifest that kills a process named killmenow.  
 Requirements:
 
 - Must use the exec Puppet resource
