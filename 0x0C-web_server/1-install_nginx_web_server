@@ -1,6 +1,6 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 # Bash script that configures a new Ubuntu machine and installs ngnx
-sudo apt-get -y update
+sudo apt-get update
 sudo apt-get -y install nginx
 echo "Holberton School" > var/www/html/index.nginx-debian.html
 sudo service start nginx  
