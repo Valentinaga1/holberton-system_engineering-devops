@@ -41,7 +41,7 @@ frontend http
     redirect scheme https code 301 if !{ ssl_fc}
 
 frontend http
-    bind *:443 ssl crt /etc/haproxy/certs/sofivism.tech.pem
+    bind *:443 ssl crt /etc/haproxy/certs/valentinagomeza.tech
     reqadd X-forwarded-Proto:\ https
     default_backend back
 
