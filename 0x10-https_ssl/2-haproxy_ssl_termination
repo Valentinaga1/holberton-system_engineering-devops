@@ -34,19 +34,23 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend http
-    bind *:80
-    reqadd X-forwarded-Proto:\ http
-    default_backend back
-    redirect scheme https code 301 if !{ ssl_fc}
+frontend valentinagomeza.tech
+        bind *:80
+        mode http
+        default_backend webservers
 
-frontend http
-    bind *:443 ssl crt /etc/haproxy/certs/valentinagomeza.tech
-    reqadd X-forwarded-Proto:\ https
-    default_backend back
+frontend www-https
+   bind *:443 ssl crt /etc/haproxy/certs/www.valentinagomeza.tech.pem
+   reqadd X-Forwarded-Proto:\ https
+   acl letsencrypt-acl path_beg /.well-known/acme-challenge/
+   use_backend letsencrypt-backend if letsencrypt-acl
+   default_backend webservers
 
-backend back
-    balance roundrobin
-    redirect scheme https if !{ ssl_fc }
-    server gc-1881-web-01-1607550953 35.185.80.75:80 check
-    server gc-1881-web-02-1608528490 35.231.48.2:80 check
+backend webservers
+        redirect scheme https if !{ ssl_fc }
+        balance roundrobin
+        server 1881-web-01 35.185.80.75:80 check
+        server 1881-web-02 35.231.48.2:80 check
+
+backend letsencrypt-backend
+   server letsencrypt 127.0.0.1:54321
