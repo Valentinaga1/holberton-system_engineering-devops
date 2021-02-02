@@ -8,22 +8,20 @@ import requests
 if __name__ == "__main__":
     """working on an API
     """
+    employee_id = "https://jsonplaceholder.typicode.com/users"
+    employe_id_response = requests.get(employee_id)
+    employe__id_response_dict = employe_id_response.json()
     dict_to_json = {}
-    url = 'https://jsonplaceholder.typicode.com'
-
-    # get user and extrac his/her username
-    response = requests.get('{}/users'.format(url))
-    get_user = response.json()
-    for user in get_user:
+    for user in employe__id_response_dict:
         new_list = []
         id = user.get('id')
         username = user.get('username')
 
-        # get Completed and title
-        new_reponse = requests.get('{}/todos/?userId={}'.format(url, id))
-        get_task = new_reponse.json()
+        todos = "https://jsonplaceholder.typicode.com/todos?userId={}".format(id)
+        todos_response = requests.get(todos)
+        tasks_list = todos_response.json()
 
-        for item in get_task:
+        for item in tasks_list:
             new_dict = {}
             new_dict['username'] = username
             new_dict['task'] = item.get('title')
