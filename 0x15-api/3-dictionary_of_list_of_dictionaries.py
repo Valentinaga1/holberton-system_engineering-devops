@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""Using and API and work in Json
-"""
+"""Python script to export data in a dictionary of list of dictionaries"""
 import json
 import requests
-
 
 if __name__ == "__main__":
     """working on an API
