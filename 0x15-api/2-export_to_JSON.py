@@ -8,7 +8,7 @@ if __name__ == "__main__":
     employee_id = "https://jsonplaceholder.typicode.com/users/" + sys.argv[1]
     employe_id_response = requests.get(employee_id)
     employe__id_response_dict = employe_id_response.json()
-    employe_name = employe__id_response_dict.get("name")
+    employe_name = employe__id_response_dict.get("username")
 
     todos = "https://jsonplaceholder.typicode.com/todos?userId=" + sys.argv[1]
     todos_response = requests.get(todos)
