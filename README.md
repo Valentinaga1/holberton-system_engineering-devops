@@ -25,7 +25,7 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x13. Firewall](./0x13-firewall) | Setting up UFW to block/allow incoming traffic |
 | [0x14. Mysql](./0x14-mysql) | Implementing Primary-Replica infrastructure in MySQL |
 | [0x15. API](./0x15-api) | Python scripts to export data to CSV and JSON |
-| [0x16. API advanced](./0x16. API advanced) | Interacting with Reddit´s API to scrape data |
+| [0x16. API advanced](./0x16-api_advanced) | Interacting with Reddit´s API to scrape data |
 
 ## Author
 
