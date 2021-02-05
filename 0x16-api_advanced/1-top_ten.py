@@ -11,9 +11,9 @@ def top_ten(subreddit):
     subreddit"""
 
     url = "https://www.reddit.com/r/"
-
+    headers = {"User-Agent": "User Agent"}
     response = requests.get(url + subreddit + "/hot.json?limit=10",
-                            allow_redirects=False)
+                            headers=headers, allow_redirects=False)
     # print(response)
     if response.status_code == 200:
         for i in response.json().get("data").get("children"):
