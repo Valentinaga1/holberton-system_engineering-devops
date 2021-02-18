@@ -26,6 +26,8 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x14. Mysql](./0x14-mysql) | Implementing Primary-Replica infrastructure in MySQL |
 | [0x15. API](./0x15-api) | Python scripts to export data to CSV and JSON |
 | [0x16. API advanced](./0x16-api_advanced) | Interacting with Reddit´s API to scrape data |
+| [0x17. Web stack debugging #3](./0x17-web_stack_debugging_3) | Debugging with strace |
+| [0x18. Webstack monitoring](./0x18-webstack_monitoring) | Monitoring system metrics with Datadog |
 
 ## Author
 
